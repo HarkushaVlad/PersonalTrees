@@ -1,0 +1,9 @@
+{
+  "Name": "Personal Trees",
+  "Author": "Reprodudix",
+  "Version": "1.0.0",
+  "Description": "Allows players to chop only the trees they planted in multiplayer.",
+  "UniqueID": "Reprodudix.PersonalTrees",
+  "EntryDll": "PersonalTrees.dll",
+  "UpdateKeys": []
+}
