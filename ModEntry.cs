@@ -1,4 +1,5 @@
 using HarmonyLib;
+using PersonalTrees.Patches;
 using StardewModdingAPI;
 
 namespace PersonalTrees
@@ -14,6 +15,8 @@ namespace PersonalTrees
             StaticMonitor = Monitor;
 
             var harmony = new Harmony(ModManifest.UniqueID);
+            TreePlacementPatch.ApplyPatch(harmony);
+            TreeToolActionPatch.ApplyPatch(harmony);
         }
     }
 }
