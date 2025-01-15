@@ -45,7 +45,7 @@ namespace PersonalTrees.Patches
             {
                 if (!ModEntry.Config.IsShowTreeOwnerMiniPortrait)
                     DrawFarmerPortrait(__instance, spriteBatch, farmer);
-                
+
                 DrawTooltip(spriteBatch, farmer);
             }
         }
@@ -115,6 +115,11 @@ namespace PersonalTrees.Patches
 
             var boxX = Game1.getMouseX() + 32;
             var boxY = Game1.getMouseY() + 32;
+
+            if (Game1.player.ActiveObject != null)
+            {
+                boxX += (int)(40 / Game1.options.desiredBaseZoomLevel);
+            }
 
             IClickableMenu.drawTextureBox(
                 spriteBatch,
