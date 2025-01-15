@@ -1,3 +1,5 @@
 {
-  "warning.anotherOwner": "This tree belongs to {{playerName}}."
+  "warning.anotherOwner": "This tree belongs to {{playerName}}.",
+  "hint.treeOwner": "{{playerName}}'s tree",
+  "hint.yourTree": "Your tree"
 }

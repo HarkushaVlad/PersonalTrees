@@ -17,6 +17,7 @@ namespace PersonalTrees
             var harmony = new Harmony(ModManifest.UniqueID);
             TreePlacementPatch.ApplyPatch(harmony);
             TreeToolActionPatch.ApplyPatch(harmony);
+            TreeDrawPatch.ApplyPatch(harmony);
         }
     }
 }
