@@ -38,10 +38,14 @@ namespace PersonalTrees.Patches
             if (farmer == null)
                 return;
 
-            DrawFarmerPortrait(__instance, spriteBatch, farmer);
+            if (ModEntry.Config.IsShowTreeOwnerMiniPortrait)
+                DrawFarmerPortrait(__instance, spriteBatch, farmer);
 
             if (IsMouseHoveringOverTree(__instance))
             {
+                if (!ModEntry.Config.IsShowTreeOwnerMiniPortrait)
+                    DrawFarmerPortrait(__instance, spriteBatch, farmer);
+                
                 DrawTooltip(spriteBatch, farmer);
             }
         }

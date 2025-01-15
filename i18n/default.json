@@ -1,5 +1,9 @@
 {
   "warning.anotherOwner": "This tree belongs to {{playerName}}.",
   "hint.treeOwner": "{{playerName}}'s tree",
-  "hint.yourTree": "Your tree"
+  "hint.yourTree": "Your tree",
+  "config.toggleButton.name": "Toggle mini portrait keybind",
+  "config.toggleButton.tooltip": "Press this button to toggle the visibility of the tree owner's mini portrait on the tree.",
+  "config.isShowOption.name": "Show tree owner's mini portrait",
+  "config.isShowOption.tooltip": "Enable or disable the display of the tree owner's mini portrait on the tree"
 }
