@@ -2,8 +2,10 @@
   "Name": "Personal Trees",
   "Author": "Reprodudix",
   "Version": "1.0.0",
-  "Description": "Allows players to chop only the trees they planted in multiplayer.",
+  "Description": "Displays tree ownership and prevents non-owners from cutting them down.",
   "UniqueID": "Reprodudix.PersonalTrees",
   "EntryDll": "PersonalTrees.dll",
-  "UpdateKeys": []
+  "UpdateKeys": [
+    "Nexus:31647"
+  ]
 }
