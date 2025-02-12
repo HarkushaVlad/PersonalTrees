@@ -5,5 +5,6 @@
   "config.toggleButton.name": "Toggle mini portrait keybind",
   "config.toggleButton.tooltip": "Press this button to toggle the visibility of the tree owner's mini portrait on the tree.",
   "config.isShowOption.name": "Show tree owner's mini portrait",
-  "config.isShowOption.tooltip": "Enable or disable the display of the tree owner's mini portrait on the tree"
+  "config.isShowOption.tooltip": "Enable or disable the display of the tree owner's mini portrait on the tree",
+  "message.noMod": "The player {{name}} does not have the mod installed. For correct functionality, all players must have the mod installed."
 }
