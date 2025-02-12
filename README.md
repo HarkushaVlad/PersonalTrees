@@ -22,7 +22,8 @@ while preventing others from cutting them down.
 ## Install
 
 1. Install [SMAPI](https://smapi.io).
-2. Download the mod from the [releases page](https://github.com/HarkushaVlad/PersonalTrees/releases).
+2. Download the mod from the [releases page](https://github.com/HarkushaVlad/PersonalTrees/releases)
+   or [NexusMods](https://www.nexusmods.com/stardewvalley/mods/31647) and place it in the `Stardew Valley/Mods` folder.
 3. Place the mod in the `Stardew Valley/Mods` folder.
 4. (Optional) Install [Generic Mod Config Menu](https://www.nexusmods.com/stardewvalley/mods/5098) for an easy way to
    configure settings.
