@@ -6,5 +6,11 @@
   "config.toggleButton.tooltip": "Press this button to toggle the visibility of the tree owner's mini portrait on the tree.",
   "config.isShowOption.name": "Show tree owner's mini portrait",
   "config.isShowOption.tooltip": "Enable or disable the display of the tree owner's mini portrait on the tree",
-  "message.noMod": "The player {{name}} does not have the mod installed. For correct functionality, all players must have the mod installed."
+  "message.noMod": "The player {{name}} does not have the mod installed. For correct functionality, all players must have the mod installed.",
+  "config.treeOwnershipToggleButton.name": "Tree ownership toggle keybind",
+  "config.treeOwnershipToggleButton.tooltip": "Toggle ownership of the tree you're targeting: claim a wild tree or release your own tree.",
+  "message.treeReleased": "You released ownership of this tree. Anyone can chop it now.",
+  "message.notYourTree": "This tree belongs to another player.",
+  "message.treeClaimed": "You claimed this tree. Only you can chop it.",
+  "message.releaseUnavailable": "Tree ownership could not be changed. Make sure the host has Personal Trees installed."
 }

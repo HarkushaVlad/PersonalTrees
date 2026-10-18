@@ -15,6 +15,11 @@ while preventing others from cutting them down.
     - A mini portrait of the tree's owner is displayed on the trunk of owned trees.
     - You can toggle these portraits on or off using a configurable keybind (default is `J`). Can be configured via
       **Generic Mod Config Menu** or in the `config.json` file located in the mod's folder.
+- **Tree Ownership Toggle**:
+    - Stand nearby, hover near a tree's base or trunk, and press `K` to claim a wild tree or release ownership of your
+      own tree. The key can be changed via **Generic Mod Config Menu** or in `config.json`.
+    - Releasing makes the tree available for anyone to chop. You cannot change another player's tree ownership. In
+      multiplayer, the host must have Personal Trees installed for ownership changes to work.
 - **Multiplayer Notification**
     - If a player joins the game without having the mod installed, a notification will be sent in the in-game
       chat to inform others.

@@ -29,6 +29,9 @@ public static class MessageManager
                 var message = e.ReadAs<string>();
                 Game1.chatBox.addInfoMessage(message);
                 break;
+            default:
+                TreeOwnershipManager.HandleMessage(e);
+                break;
         }
     }
 }

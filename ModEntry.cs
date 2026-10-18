@@ -59,6 +59,14 @@ namespace PersonalTrees
                 setValue: value => Config.TreeOwnerMiniPortraitToggleButton = value
             );
 
+            gmcmApi.AddKeybind(
+                mod: ModManifest,
+                name: () => StaticHelper.Translation.Get(ModConstants.TranslationKeys.TreeOwnershipToggleButtonName),
+                tooltip: () => StaticHelper.Translation.Get(ModConstants.TranslationKeys.TreeOwnershipToggleButtonTooltip),
+                getValue: () => Config.TreeOwnershipToggleButton,
+                setValue: value => Config.TreeOwnershipToggleButton = value
+            );
+
             gmcmApi.AddBoolOption(
                 mod: ModManifest,
                 name: () => StaticHelper.Translation.Get(ModConstants.TranslationKeys.ShowOptionName),
@@ -88,6 +96,17 @@ namespace PersonalTrees
 
         private void OnButtonPressed(object? sender, ButtonPressedEventArgs e)
         {
+            if (e.Button == Config.TreeOwnershipToggleButton && Context.IsPlayerFree && Context.CanPlayerMove &&
+                !Game1.player.UsingTool && Game1.chatBox?.isActive() != true &&
+                !Game1.eventUp && Game1.currentLocation != null)
+            {
+                var cursorTile = e.Cursor.GrabTile;
+                var playerTile = Game1.player.Tile;
+                if (Math.Abs(cursorTile.X - playerTile.X) <= 1 && Math.Abs(cursorTile.Y - playerTile.Y) <= 1 &&
+                    PersonalTrees.TreeOwnershipManager.TryToggleOwnership(Game1.currentLocation, cursorTile, Game1.player))
+                    StaticHelper.Input.Suppress(e.Button);
+            }
+
             if (e.Button == Config.TreeOwnerMiniPortraitToggleButton && Context.IsWorldReady)
             {
                 Config.IsShowTreeOwnerMiniPortrait = !Config.IsShowTreeOwnerMiniPortrait;

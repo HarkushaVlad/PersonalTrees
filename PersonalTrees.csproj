@@ -4,7 +4,7 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <GamePath>/run/media/vhark/Games/SteamLibrary/steamapps/common/Stardew Valley</GamePath>
+        <GamePath>/home/vhark/.local/share/Steam/steamapps/common/Stardew Valley</GamePath>
         <EnableHarmony>true</EnableHarmony>
     </PropertyGroup>
 
